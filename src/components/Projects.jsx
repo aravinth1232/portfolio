@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './NavBar'
 
 const Projects = () => {
   return (
-    <div>
-      
-    </div>
+   <>
+    <Navbar />
+   </>
   )
 }
 

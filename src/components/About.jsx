@@ -1,11 +1,19 @@
 import React from 'react'
 import Navbar from "./NavBar"
+import TextAnimation from "./TextAnimation"
+import TextReveal from "./TextReveal"
 const About = () => {
   return (
-    <div>
-  <Navbar />
-  jjjj
-    </div>
+    <>
+    <Navbar />
+ 
+    <main className="">
+      <TextAnimation />
+      <TextReveal /> 
+    </main>
+  </>
+    
+  
   )
 }
 

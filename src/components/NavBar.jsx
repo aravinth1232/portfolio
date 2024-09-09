@@ -3,13 +3,14 @@ import { Link, Outlet } from 'react-router-dom'
 import logo from '../assets/logo.jpg'
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import '/src/index.css'
 
 
 const links = [
     {id: 1 , comp:'About' , path:'/' },
     {id: 2 , comp:'Skills', path:'/skills' },
     {id: 3 , comp:'Projects', path:'/projects'},
-    {id: 4 , comp:'Contact', path:'/contact'},
+    // {id: 4 , comp:'Contact', path:'/contact'},
     
 ]
 
@@ -43,11 +44,11 @@ const Navbar = () => {
                  alt="logo"  /> </Link>
                
                
-                <nav className='hidden md:flex text-fifth md:text-lg' >
-                    <ul className='flex flex-row gap-10'>
+                <nav className='hidden md:flex text-fifth md:text-lg ' >
+                    <ul className='flex flex-row gap-10 '>
                         {links.map((link) => 
                             <li key={link.id}
-                            
+                                className='hike'
                             >
                                 <Link 
                                
@@ -83,8 +84,8 @@ const Navbar = () => {
 
    <div style={{display:fun2}} >   
         <nav 
-        className=' md:hidden  bg-tertiary  text-fifth'>
-                 <ul className='  flex flex-col gap-5 justify-center items-center  transition-all  text-lg py-5  '>
+        className='md:hidden  bg-tertiary  text-fifth'>
+                 <ul className=' w-1/2 h-[50%] flex flex-col gap-5 justify-start bg-primary items-start  transition-all  text-lg py-5 px-6 rounded-r-2xl  absolute  rounded- '>
                         {links.map((link) => 
                             <li key={link.id}>
                                 <Link to={link.path}
