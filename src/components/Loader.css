@@ -1,0 +1,37 @@
+
+@keyframes loader {
+    0% {
+        transform: scale(0, 0);
+      }
+      40% {
+        transform: scale(2.5, 2.5);
+      }
+      100% {
+        transform: scale(0, 0);
+      }
+  }
+  
+ 
+ #img {
+    animation: loader 1.2s ease infinite;
+
+ }
+
+ .loader{
+    border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 500ms linear infinite;
+ }
+
+ @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  

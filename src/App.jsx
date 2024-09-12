@@ -43,9 +43,11 @@ import { IoCall } from "react-icons/io5";
 // export default App
 // App.
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/NavBar';
+import Loader from './components/Loader.jsx';
+
 
 const Section = ({ id, children, className }) => (
   <section id={id} className={` bg-secondary ${className}`}>
@@ -66,8 +68,30 @@ const App = () => {
     }
   }, [location]);
 
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },1000)
+
+  },[])
+
+  const override= {
+  
+    display:"block",
+   
+    margin: "50vh 0 0vh 50vw ",
+    borderColor: "#4CAF4F",
+  };
+
   return (
-    <>
+  
+
+      loading ?  <Loader />  :
+<>
     <div className='bg-secondary'>
      
       <Navbar />
@@ -87,7 +111,8 @@ const App = () => {
       <button
       className='w-fit  rounded-full p-3 bg-green-800'><a href="tel:+917708241659"><IoCall size={20} color='white' /></a></button>
     </div>
-    </>
+  </>
+  
   );
 };
 
