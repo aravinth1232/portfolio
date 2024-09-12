@@ -154,7 +154,7 @@ const Navbar = () => {
           <NavLink
             to="#section1"
             className={`text-base md:text-xl ${
-              activeSection === 'section1' ? 'text-white font-bold ' : ''
+              activeSection === 'section1' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
           >
             About
@@ -164,7 +164,7 @@ const Navbar = () => {
           <NavLink
             to="#section2"
             className={`text-base md:text-xl ${
-              activeSection === 'section2' ? 'text-white font-bold ' : ''
+              activeSection === 'section2' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
           >
             Skills
@@ -174,7 +174,7 @@ const Navbar = () => {
           <NavLink
             to="#section3"
             className={`text-base md:text-xl ${
-              activeSection === 'section3' ? 'text-white font-bold ' : ''
+              activeSection === 'section3' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
           >
            Experience

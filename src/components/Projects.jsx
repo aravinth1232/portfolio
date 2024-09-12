@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './NavBar'
 import "../index.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const educations =[
   {name:"AltrAI Techngologies Pvt Ltd", date:"July 2024-Present", domain: "Frontend Developer",mode:"Internship", site:"https://koiz-2-0.vercel.app/",sitename:"Koiz-2.0",sitenumber:"My work : "},
@@ -9,6 +12,9 @@ const educations =[
 ]
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
    <>
 
@@ -16,7 +22,7 @@ const Projects = () => {
       {
 
       educations.map((education)=>(
-        <main className=' shadow-lg rounded-2xl bg-primary  flex flex-col gap-5 px-3 py-5 hover:cursor-pointer hover:shadow-xl duration-300'>
+        <main className=' shadow-lg rounded-2xl bg-primary  flex flex-col gap-5 px-3 py-5 hover:cursor-pointer hover:shadow-xl duration-300' data-aos="fade-up">
         <article className='mochi flex flex-col lg:flex-row justify-between gap-3'>
           <h1
           className='text-base text-fourth'
@@ -29,7 +35,7 @@ const Projects = () => {
         </aside>  
     
           <h1 className='text-sm text-white' >{education.sitenumber}<a 
-          className="text-sm text-fourth hover:underline"
+          className="text-sm text-fourth hover:underline animate-pulse"
           href={education.site} target="_blank" rel="noopener noreferrer">{education.sitename}</a></h1>
 
         
