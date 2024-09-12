@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 const TextReveal = () => {
 
-    const words = ["Frontend Developer", "React Developer"]; // Array of words to display
+    const words = ["Web Developer","Frontend Developer", "React Developer"]; // Array of words to display
   const [displayedText, setDisplayedText] = useState('');
   const [wordIndex, setWordIndex] = useState(0); // Index of the current word
   const [charIndex, setCharIndex] = useState(0); // Index of the current character
@@ -42,7 +42,7 @@ const TextReveal = () => {
     }
   }, [charIndex, isDeleting, wordIndex, words]);
   return (
-    <div className="text-base lg:text-xl font-mochi text-secondary ">
+    <div className="text-base lg:text-xl xl:text-2xl pt-2 font-bold mochi text-fourth ">
      {displayedText}
     <span className="border-r-2 border-blue-600 animate-blink"></span>
   </div>

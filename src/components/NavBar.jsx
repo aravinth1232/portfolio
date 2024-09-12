@@ -139,7 +139,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" fixed top-0 w-full mx-auto px-10 rounded-xl bg-primary text-white shadow-md z-10">
+    <nav className=" fixed top-0 w-full mx-auto px-10 rounded-xl bg-primary text-secondary shadow-md z-10">
        {/* <header className='flex justify-between sm:justify-around items-center  py-4'>
             <article>
               <img src={pic} alt="" 
@@ -154,8 +154,8 @@ const Navbar = () => {
           <NavLink
             to="#section1"
             className={`text-base md:text-xl ${
-              activeSection === 'section1' ? 'text-blue-500' : ''
-            } hover:text-blue-300`}
+              activeSection === 'section1' ? 'text-white font-bold ' : ''
+            } hover:text-tertiary`}
           >
             About
           </NavLink>
@@ -164,8 +164,8 @@ const Navbar = () => {
           <NavLink
             to="#section2"
             className={`text-base md:text-xl ${
-              activeSection === 'section2' ? 'text-blue-500' : ''
-            } hover:text-blue-300`}
+              activeSection === 'section2' ? 'text-white font-bold ' : ''
+            } hover:text-tertiary`}
           >
             Skills
           </NavLink>
@@ -174,8 +174,8 @@ const Navbar = () => {
           <NavLink
             to="#section3"
             className={`text-base md:text-xl ${
-              activeSection === 'section3' ? 'text-blue-500' : ''
-            } hover:text-blue-300`}
+              activeSection === 'section3' ? 'text-white font-bold ' : ''
+            } hover:text-tertiary`}
           >
            Experience
           </NavLink>

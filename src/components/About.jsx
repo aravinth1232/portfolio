@@ -17,7 +17,7 @@ const About = () => {
       <article className='flex-1 lg:flex-0  flex justify-start md:justify-end '>
         <img src={pic2} alt=""  className=' lg:flex-0 w-3/4 md:w-1/2 lg:w-1/3 '/>
       </article>
-      <article className='flex-1 '>
+      <article className='flex-1  '>
       <TextAnimation />
       <TextReveal /> 
 
@@ -29,12 +29,12 @@ const About = () => {
       ><FaGithub
       className='hover:transform hover:scale-125 duration-300'
       role='button' /></a>
-      <a href="https://github.com/aravinth1232" target="_blank" rel="noopener noreferrer"
+      <a href="https://linkedin.com/in/aravinth-am" target="_blank" rel="noopener noreferrer"
       
       ><FaLinkedin
       className='hover:transform hover:scale-125 duration-300'
       role='button' /></a>
-      <a href="https://github.com/aravinth1232" target="_blank" rel="noopener noreferrer"
+      <a href="https://drive.google.com/file/d/10hnmo5p5a1KMU2kVkvZ4j99RsFJrQc8x/view" target="_blank" rel="noopener noreferrer"
       
       ><GrDocumentUpload
       className='hover:transform hover:scale-125 duration-300'

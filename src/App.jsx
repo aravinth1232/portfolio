@@ -6,8 +6,9 @@
 import About from '../src/components/About'
 import Skills from '../src/components/Skills'
 import Projects from '../src/components/Projects'
-import Contact from '../src/components/Contact'
+// import Contact from '../src/components/Contact'
 import pic from "../src/assets/logo.jpg"
+import { IoCall } from "react-icons/io5";
 // import Nopage from '../src/components/Nopage'
 // import Home from "../src/components/Home"
 
@@ -47,7 +48,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/NavBar';
 
 const Section = ({ id, children, className }) => (
-  <section id={id} className={` bg-primary ${className}`}>
+  <section id={id} className={` bg-secondary ${className}`}>
     <h2 className="text-3xl">{children}</h2>
   </section>
 );
@@ -67,7 +68,7 @@ const App = () => {
 
   return (
     <>
-    <div className=''>
+    <div className='bg-secondary'>
      
       <Navbar />
       <main className="pt-24 ">
@@ -82,7 +83,10 @@ const App = () => {
         </Section>
       </main>
     </div>
-    <Contact />
+    <div className='fixed top-[90%] right-[2%] w-fit hover:scale-105 duration-200 ' >
+      <button
+      className='w-fit  rounded-full p-3 bg-green-800'><a href="tel:+917708241659"><IoCall size={20} color='white' /></a></button>
+    </div>
     </>
   );
 };

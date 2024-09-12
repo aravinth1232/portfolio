@@ -34,11 +34,11 @@ const Skills = () => {
           items.map(({id,name,icon:IconComponent})=>
           (
             <div key={id}
-            className='flex bg-secondary  flex-1 flex-col justify-center items-center px-4 gap-2 cursor-pointer  rounded-2xl py-2 hover:transform shadow-xl hover:scale-110  duration-300'>
+            className='flex bg-primary  flex-1 flex-col justify-center items-center px-4 gap-2 cursor-pointer  rounded-2xl py-2 hover:transform shadow-xl hover:scale-110  duration-300'>
               
-                <IconComponent size={50}  className='  '/>
+                <IconComponent color='#ADBBDA' size={50}  className='  '/>
                               
-              <h1 className='mochi text-base lg:text-2xl'>{name}</h1>
+              <h1 className='mochi text-base lg:text-2xl text-fourth '>{name}</h1>
 
             </div>)
 

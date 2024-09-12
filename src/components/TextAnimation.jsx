@@ -17,7 +17,7 @@ const TextAnimation = () => {
     }
   }, [index, text]);
   return (
-    <h1 className="text-xl font-mono text-primary ">
+    <h1 className="text-xl xl:text-3xl poppins  text-white ">
     Hi, I am <span className='animate-pulse'>{displayedText}</span>
     <span className=" animate-blink"></span>
   </h1>
