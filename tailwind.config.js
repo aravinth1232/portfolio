@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#35374B',
-        'secondary': '#344955',
-        'tertiary': '#50727B',
-        'fourth' : "#78A083",
+        'primary': '#3D52A0',
+        'secondary': '#7091E6',
+        'tertiary': '#F9F9F9',
+        'fourth' : "#FFFFFF",
         'fifth': '#F0F8FF',
+        'sixth':'#F3B105',
+        'seventh':'#FFEFBC'
       },
 
       animation: {
@@ -22,6 +24,15 @@ export default {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0 },
         },
+      },
+      fontFamily: {
+        'Mochi': ["Mochiy Pop One"],
+      },
+      fontFamily: {
+        'Poppins': ["Poppins"],
+      },
+      fontFamily: {
+        'Guerilla': ["Protest Guerrilla"],
       },
 
     },

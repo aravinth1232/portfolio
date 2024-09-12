@@ -1,0 +1,1 @@
+export const Sectionids = ["about","skills","projects"]

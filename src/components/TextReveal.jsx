@@ -42,8 +42,8 @@ const TextReveal = () => {
     }
   }, [charIndex, isDeleting, wordIndex, words]);
   return (
-    <div className="text-xl font-mono text-secondary">
-    Am a {displayedText}
+    <div className="text-base lg:text-xl font-mochi text-secondary ">
+     {displayedText}
     <span className="border-r-2 border-blue-600 animate-blink"></span>
   </div>
   )
