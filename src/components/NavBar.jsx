@@ -108,6 +108,8 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import pic from "/src/assets/logo.jpg"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Navbar = () => {
@@ -138,8 +140,12 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <nav className=" fixed top-0 w-full mx-auto px-10 rounded-xl bg-primary text-secondary shadow-md z-10">
+    <nav className=" fixed top-0 w-full mx-auto px-10 rounded-xl bg-primary text-secondary shadow-md z-10" data-aos="fade-down">
        {/* <header className='flex justify-between sm:justify-around items-center  py-4'>
             <article>
               <img src={pic} alt="" 
