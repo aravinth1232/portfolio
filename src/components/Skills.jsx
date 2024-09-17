@@ -8,6 +8,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
+import { RiNextjsFill } from "react-icons/ri";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,6 +24,7 @@ const items =[
   {id: 6, name:"BootStrap",icon: FaBootstrap},
   {id: 7, name:"Java",icon: FaJava},
   {id: 8, name:"MySQL",icon: GrMysql},
+  {id: 9, name:"Next.js",icon: RiNextjsFill},
     ]
     
  

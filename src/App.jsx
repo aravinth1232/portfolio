@@ -107,7 +107,7 @@ const App = () => {
         </Section>
       </main>
     </div>
-    <div className='fixed top-[90%] right-[2%] w-fit hover:scale-105 duration-200 ' >
+    <div className='fixed top-[90%] right-[5%] md:right-[2%] w-fit hover:scale-125 duration-200 ' >
       <button
       className='w-fit  rounded-full p-3 bg-green-800'><a href="tel:+917708241659"><IoCall size={20} color='white' /></a></button>
     </div>
