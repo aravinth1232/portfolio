@@ -158,7 +158,7 @@ const Navbar = () => {
       <ul className="flex justify-center space-x-6 md:space-x-10 py-6">
         <li>
           <NavLink
-            to="#section1"
+            to="#about"
             className={`text-base md:text-xl ${
               activeSection === 'section1' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
@@ -168,7 +168,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="#section2"
+            to="#skills"
             className={`text-base md:text-xl ${
               activeSection === 'section2' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
@@ -178,13 +178,23 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="#section3"
+            to="#experience"
             className={`text-base md:text-xl ${
               activeSection === 'section3' ? 'text-white font-bold animate-pulse' : ''
             } hover:text-tertiary`}
           >
            Experience
           </NavLink>
+        </li>
+        <li>
+          {/* <NavLink
+            to="#others"
+            className={`text-base md:text-xl ${
+              activeSection === 'section4' ? 'text-white font-bold animate-pulse' : ''
+            } hover:text-tertiary`}
+          >
+           Others
+          </NavLink> */}
         </li>
       </ul>
     </nav>

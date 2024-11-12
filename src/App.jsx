@@ -47,6 +47,7 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Loader from './components/Loader.jsx';
+import Personal from './components/Personal.jsx';
 
 
 const Section = ({ id, children, className }) => (
@@ -96,7 +97,7 @@ const App = () => {
      
       <Navbar />
       <main className="pt-24 ">
-        <Section id="section1" className="">
+        <Section id="about" className="">
             <About />
         </Section>
         <Section id="section2" className="">
@@ -105,11 +106,14 @@ const App = () => {
         <Section id="section3" className="">
           <Projects />
         </Section>
+        {/* <Section id="section4" className="">
+          <Personal />
+        </Section> */}
       </main>
     </div>
     <div className='fixed top-[90%] right-[5%] md:right-[2%] w-fit hover:scale-125 duration-200 ' >
       <button
-      className='w-fit  rounded-full p-3 bg-green-800'><a href="tel:+917708241659"><IoCall size={20} color='white' /></a></button>
+      className='w-fit  rounded-full p-3 bg-green-600'><a href="tel:+917708241659"><IoCall size={20} color='white' /></a></button>
     </div>
   </>
   

@@ -14,26 +14,25 @@ const educations =[
       { id:1,
         site:"https://koiz-2-0.vercel.app/",
         sitename:"Koiz",
-        sitenumber:"Project",
+        sitenumber:"Project 1",
          techstack : "React & Tailwind",
         icon : FaArrowUpRightFromSquare },
+        { id:2,
+          site:"https://sarala-admin.vercel.app/",
+          sitename:"SE Wbsite",
+          sitenumber:"Project 2",
+           techstack : "React & Tailwind",
+          icon : FaArrowUpRightFromSquare },
+  
+
         ]},       
   
   {name:"Senchola Technology Solutions", date:"January 2024-May 2024", domain: "Frontend Developer",mode:"Internship",
     project:[
-    {
-      id: 2,
-      site:"https://koiz-2-0.vercel.app/",
-      sitename:"",
-      sitenumber:"",
-       techstack : ""}]},
+    ]},
   {name:"Shiash Info Solutions", date:"June 2023-August 2023", domain: "Java & MySQL",mode:"E-Learning",
     project:[
-    { id: 3,
-      site:"",
-      sitename:"",
-      sitenumber:"",
-       techstack : ""}]},
+   ]},
 ]
 
 const Projects = () => {
@@ -68,7 +67,7 @@ const Projects = () => {
           {
             education.project.map(({id,site,sitenumber,sitename,techstack,icon: IconComponent})=>{
             
-              if(id==1){
+              if(id){
                 return(
                   <div
                   key={id}
